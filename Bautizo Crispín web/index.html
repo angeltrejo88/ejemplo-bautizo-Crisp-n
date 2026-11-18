@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bautizo y Primer Añito de Crispín Ignacio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- MARCA DE AGUA VISTA PREVIA - ELIMINA TODO ESTO AL FINALIZAR -->
+<style>
+.marca-agua {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Ctext x='50%25' y='50%25' font-size='32' font-weight='bold' fill='%23777' fill-opacity='0.13' text-anchor='middle' transform='rotate(45 150 150)'%3EVISTA PREVIA%3C/text%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 300px 300px;
+}
+</style>
+ <!-- FIN MARCA DE AGUA (el div va justo despues de <body>) -->
+
+
+</head>
+<body class="bloq">
+
+    <!-- MARCA DE AGUA VISTA PREVIA - ELIMINA ESTE DIV Y EL <style> DEL HEAD AL ENTREGAR -->
+<div class="marca-agua"></div>
+
+<!-- EDITAR: archivo de música -->
+<audio id="musica" loop preload="auto" src="audio/musica.mp3"></audio>
+
+<!-- PESTAÑA DE MÚSICA (oculta hasta abrir el sobre) -->
+<div class="mus" id="mus">
+  <button class="lengua" id="lengua" aria-label="Música">♪</button>
+  <div class="panel"><span>Música</span><button id="pp" aria-label="Reproducir o pausar">❚❚</button></div>
+</div>
+
+<!-- ================= SOBRE ================= -->
+<section id="intro">
+  <h1 class="script">Mi Bautizo<br>y Primer Añito</h1>
+  
+  <div class="escena">
+    <div class="sobre" id="sobre">
+      <!-- EDITAR: imágenes del sobre -->
+      <img class="cerrado" src="img/sobre_cerrado.png" alt="Sobre cerrado">
+      <img class="abierto" src="img/sobre_abierto.png" alt="Sobre abierto">
+      <button class="sello" id="sello" aria-label="Abrir invitación"><img src="img/sello.png" alt="Sello"></button>
+      <span class="toca">Toca el sello para abrir</span>
+    </div>
+    <img class="caballito" src="img/caballito.png" alt="">
+  </div>
+  <p class="mini">CELEBRA JUNTO A NOSOTROS EL BAUTIZO Y PRIMER AÑITO DE NUESTRO HIJO</p>
+  <h2 class="script nombre-intro">Crispín Ignacio</h2>
+</section>
+
+<!-- ================= INVITACIÓN ================= -->
+<main id="inv">
+
+  <!-- HERO -->
+  <section class="hero">
+    <i class="esq tl"></i><i class="esq tr"></i><i class="esq bl"></i><i class="esq br"></i>
+    <h2 class="nombre-oro script"></h2>
+    <p class="rv">Te invito a festejar mi</p>
+    <!-- EDITAR: imágenes del hero -->
+    <img class="rv img-bautizo" src="img/bautizo-primer-anito.png" alt="Bautizo y Primer Añito">
+    <img class="rv img-hero" src="img/imagen_hero.png" alt="">
+    <img class="rv img-nombre" src="img/nombre.png" alt="Crispín Ignacio González Monarrez">
+  </section>
+
+  <!-- ORACIÓN -->
+  <section class="sec">
+    <img class="rv img-rel" src="img/religiosa.png" alt="" style="width: 100px; height: auto;">
+
+    <p class="rv oracion">Señor, hoy mis papás me presentan ante Ti para que me cubras con tu gracia y tu amor. Toma mi pequeño corazón entre tus manos, guíame por tu camino y no me sueltes jamás. Gracias por mi familia y por todos los que me acompañan en este día.</p>
+  </section>
+
+  <!-- CONTADOR -->
+  <section class="sec">
+    <p class="rv fecha script">23 de enero de 2027</p>
+    <div class="rv cont">
+      <div><b>00</b><small>Días</small></div>
+      <div><b>00</b><small>Horas</small></div>
+      <div><b>00</b><small>Minutos</small></div>
+      <div><b>00</b><small>Segundos</small></div>
+    </div>
+  </section>
+
+  <!-- CEREMONIA -->
+  <section class="sec">
+    <div class="rv card">
+      
+  <img class="cab" src="img/caballito_tapa.png" alt="">
+      <img class="ico" src="img/iglesia.png" alt="">
+      <h3 class="script">Ceremonia</h3>
+      <p class="lugar">Antiguo Santuario de Nuestra Señora de Guadalupe</p>
+      <p class="hora">12:00 pm</p>
+      <p class="dir">Dirección: por confirmar</p> <!-- EDITAR: dirección -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Google Maps</a> <!-- EDITAR: link de Maps -->
+    </div>
+  </section>
+
+  <!-- RECEPCIÓN -->
+  <section class="sec">
+   <div class="rv card">
+  <img class="cab der" src="img/caballito_tapa.png" alt="" style="width: 120px;">
+      <img class="ico" src="img/social.png" alt="">
+      <h3 class="script">Recepción</h3>
+      <p class="lugar">Salón Roma</p>
+      <p class="hora">3:30 pm</p>
+      <p class="dir">Dirección: por confirmar</p> <!-- EDITAR: dirección -->
+      <a class="btn" href="#" target="_blank" rel="noopener">Google Maps</a> <!-- EDITAR: link de Maps -->
+    </div>
+  </section>
+
+    <!-- PRIMER AÑITO -->
+  <section class="sec">
+    <div class="rv card">
+      
+      <img class="ico" src="img/primer-anito.png" alt=""> <!-- EDITAR: opcional -->
+      <h3 class="script">Primer Añito</h3>
+      <p class="msj">Además de mi bautizo, ¡voy a celebrar mi primer añito! Te espero en la recepción para festejar juntos mi primer año de vida.</p> <!-- EDITAR: mensaje -->
+    </div>
+  </section>
+
+  <!-- PAPÁS -->
+  <section class="sec">
+    <div class="rv card papas">
+      <img class="cab" src="img/caballito_tapa.png" alt="" style="margin-top: -80px; width: 100px;">
+
+ <!-- EDITAR: opcional, bórrala si no lo quieres aquí -->
+      <p class="peq">EN COMPAÑÍA DE</p>
+      <h3 class="script">Mis Papás</h3>
+      <div class="orn">✦</div>
+      <p class="noms">Crispín González</p>
+      <p class="amp">&amp;</p>
+      <p class="noms">Ana Monarrez</p>
+      <div class="orn">✦</div>
+      <p class="msj">Gracias por darme la vida, por su amor y por traerme hoy ante Dios. Con ustedes mi primer añito es todavía más bonito.</p>
+    </div>
+  </section>
+
+  <!-- PADRINOS -->
+  <section class="sec">
+    <div class="rv card">
+      <h3 class="script">Mis Padrinos</h3>
+      <p class="noms">Isidro Gardea</p>
+      <p class="amp">&amp;</p>
+      <p class="noms">Manuela Reséndiz</p>
+      <p class="msj">Gracias por aceptar acompañarme en este camino de fe. Que su cariño y su ejemplo me guíen siempre.</p> <!-- EDITAR: mensaje -->
+    </div>
+  </section>
+
+  <!-- DRESS CODE -->
+  <section class="sec">
+    <div class="rv card">
+      <img class="cab der" src="img/caballito_tapa.png" alt="" style="margin-top: -80px; width: 100px;">
+      <h3 class="script">Dress Code</h3>
+      <img class="ico" src="img/dress.png" alt="">
+      <p class="lugar">Vestimenta formal</p> <!-- EDITAR: dress code -->
+      <p class="msj"></p> <!-- EDITAR: nota opcional -->
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN -->
+  <section class="sec">
+    <div class="rv card rsvp">
+      <h3 class="script">Confirma tu asistencia</h3>
+      <form id="rsvp" method="POST" target="oculto">
+        <label>Tu nombre<input id="nombre" type="text" required autocomplete="name"></label>
+        <label>Número de pases<select id="pases" required><option value="" disabled selected>Selecciona</option></select></label>
+        <div class="opc">
+          <label><input type="radio" id="si" required> Sí asistiré</label>
+          <label><input type="radio" id="no" required> No podré asistir</label>
+        </div>
+        <button class="btn" type="submit">Enviar confirmación</button>
+      </form>
+      <p id="gracias" class="msj" hidden></p>
+      <iframe name="oculto" hidden></iframe>
+    </div>
+  </section>
+
+  <!-- TE ESPERAMOS -->
+  <section class="sec">
+    <h3 class="rv script grande">¡Te esperamos!</h3>
+    <p class="rv oracion">Será un honor compartir contigo este día tan especial.</p>
+    <img class="rv img-rel" src="img/carrusel.png" alt=""> <!-- EDITAR: imagen -->
+    <p class="rv oracion">Con cariño, Familia González Monarrez</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <img src="img/Firma 3.png" alt="By Angel Trejo · AT Design Studio" style="transform: scale(.5);">
+    <p>© AT Design Studio</p>
+    <p><a href="https://facebook.com/AngelTrejo88" target="_blank" rel="noopener">By: Angel Trejo</a></p>
+    <p>Todos los derechos reservados</p>
+    <p>Durango, Dgo. · México 🇲🇽</p>
+  </footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
